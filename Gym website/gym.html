@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <style>
+        @media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 6rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* div h2{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+    body{
+        color:white;
+        margin:0px;
+        padding:0px;
+        background:url('../img/gym.jpg');
+    }     
+  .header{
+    position: sticky;
+  }
+
+    .left{
+        position:absolute;
+        display: inline-block;
+        left: 34px;
+    }
+
+
+    .mid{
+        text-shadow: #b9b6b6;
+        display:block;
+        width:75%;
+        margin:29px auto;
+    }
+
+
+    .right a{
+        position:absolute;
+        display: inline-block;
+        right:34px;
+        top:-3px;
+        font-size: 30px;
+        text-decoration: none;
+        color: #fff;
+    }
+     
+    .right a:hover{
+        color:#494848;
+    }
+
+    .navbar{
+        margin-left: 85px;
+        display:inline-block;
+        font-size: 25px;
+    }
+
+
+    .navbar li{
+        display:inline-block;
+    }
+
+
+    .navbar li a{
+       color: white;
+       text-decoration: none;
+       padding:10px 34px;
+       text-shadow: 1.08px 1.08px rgb(164, 163, 163);
+
+    }
+
+
+    .navbar li a:hover{
+        border-radius: 25%;
+        color: #343333;
+        cursor:pointer;
+    }
+
+
+    .left img{
+        padding: 5px;
+        width:150px;
+        filter:invert(100%);
+        border:2px solid #fff;
+        -moz-box-shadow: 7px 7px 4px #ccc;
+        -webkit-box-shadow: 7px 7px 4px #ccc;
+        box-shadow: 7px 7px 4px #ccc;
+        -moz-border-radius:25px;
+        -webkit-border-radius:25px;
+        border-radius:25px;
+        
+    }
+
+
+    .btn{
+        margin:0 9px;
+        color:white;
+        background-color: rgb(29, 27, 27);
+        padding:4px 14px;
+        border-radius: 5px;
+        border:2 px solid rgba(128, 128, 128, 0.5);
+        font-size:16px;
+        box-shadow: 0.3px 1.4px rgb(153, 153, 153);
+    }
+
+
+    .btn:hover{
+        background-color: rgb(43, 41, 41);
+    }
+
+
+    .container{
+        align-items: center;
+        border: 2px solid white;
+        margin:106px 80px;
+        padding: 20px;;
+        width:38%;
+        height: 50%;
+        border-radius: 28px;
+
+    }
+   
+    .container h1{
+        text-align: center;
+        text-shadow: 2px 2px rgb(157, 156, 156);
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .home{
+        position: relative;
+        font-size: 20px;
+        width: 100%;
+        bottom: 40px;
+    }
+    #hgym {
+        margin: 20px;
+        width: 490px;
+        height: 280px;
+        border-radius: 8px;
+        filter: opacity(0.856);
+    }
+    .as{
+        margin-top: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #about-us{
+        margin: 35px;
+    }
+    
+ .h1{
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    font-size :45px; 
+    text-shadow: 2px 3px 5px white;
+ }
+
+ #services{
+    margin: 34px;
+    display: flex;
+    align-items: center;
+}
+#services .box{
+
+    border: 2px solid rgb(37, 37, 37);
+    padding: 34px;
+    margin: 3px 20px;
+    border-radius: 28px;
+    background-color: rgba(56, 54, 54, 0.592);
+    cursor: pointer;
+    transition: 0.3s;
+}
+    #services .box:hover{
+    transform: translateY(7px);
+    box-shadow: -6px -6px 8px rgb(91, 92, 92),6px 6px 8px rgb(50, 50, 50);
+}
+
+#service-img{
+display: block;
+margin: auto;
+padding-bottom: 15px;
+width: 250px;
+height: 170px;
+border-radius:8px ;
+
+}
+
+.center{
+    text-align: center;
+}
+
+#fitness-img{
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    width: 1450px;
+    height: 1170px;
+    border:7px solid #5f5f5f;
+    border-radius: 20px;
+    filter: grayscale(45%);
+    cursor: pointer;
+
+}
+
+#contact h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#schedule-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 35px;
+     padding: 55px;
+}
+
+#schedule-section h1{
+    position: relative;
+    text-align: center;
+    margin-top: 55px;
+    text-shadow: 2px 3px 7px white;
+}
+
+.content-schedule{
+    margin: 40px;
+    padding: 20px;
+    border: 3px solid white;
+ 
+}
+
+#contact h1{
+    position: relative;
+    font-size: 55px;
+    text-shadow: 2px 3px 5px white;
+    top:5px;
+}
+
+.footer-left{
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+
+.footer-left h1{
+    margin-bottom: 20px;
+}
+
+.footer-right{
+    position: relative;
+    float: right;
+    padding: 10px;
+}
+
+.footer-right h1{
+    margin-bottom: 20px;
+}
+.center{
+    position: relative;
+    top:200px;
+    right: 120px;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+    <div id="Home">
+    <header class="header">
+        <div class="left">
+          <img src="../img/logo.jpg">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#Home" class="active">Home</a></li>  
+                <li><a href="#about-us">About us</a></li>  
+                <li><a href="#fittness-calculator">Fitness Calculator</a></li>  
+                <li><a href="#schedule-section"">Schedule&Training</a></li>
+                <li><a href="#contact">Contact us</a></li>  
+              </ul>
+        </div>
+        <div class="right">
+            <a href="login.html">Login</a>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of ABCDEFGH Now</h1>
+        <img src="img/hgym.jpg"  id="hgym">
+        </div>
+        
+        <div class="home">
+            <i>Getting to the gym and prioritizing your fitness isn't easy—we know! But staying on track and working toward your health goals is essential. So for those days when you need some extra motivation, these motivating fitness and workout quotes can help.
+
+                From uplifting gym quotes that'll get you hyped for your workout to fitness motivation quotes that'll inspire you to get up and get going, think of these inspiring words like an on-demand personal trainer you can look to at any time for extra support and gym-spiration.</i>
+         <div>
+        </div>
+            <section id="about-us">
+                <div>
+                    <h1 class="h1">About us</h1>
+                </div>
+              <div id="services">
+              
+                <div class="box">
+                    <img src="img/abs1.jpg" id="service-img">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta saepe recusandae quidem. Aut, ullam ab consequuntur vel cum eum ad iure optio, fugit quae numquam maxime expedita sapiente minus, atque quidem! Maiores eveniet odit obcaecati, nihil quis aliquam, enim perspiciatis magni autem sint labore totam libero quam unde dolores voluptates!</p>
+                </div>
+                <div class="box">
+                    <img src="img/abs2.jpg" id="service-img">
+                    <p class>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta saepe recusandae quidem. Aut, ullam ab consequuntur vel cum eum ad iure optio, fugit quae numquam maxime expedita sapiente minus, atque quidem! Maiores eveniet odit obcaecati, nihil quis aliquam, enim perspiciatis magni autem sint labore totam libero quam unde dolores voluptates!</p>
+                </div>
+                <div class="box">
+                    <img src="img/abs3.jpg" id="service-img">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta saepe recusandae quidem. Aut, ullam ab consequuntur vel cum eum ad iure optio, fugit quae numquam maxime expedita sapiente minus, atque quidem! Maiores eveniet odit obcaecati, nihil quis aliquam, enim perspiciatis magni autem sint labore totam libero quam unde dolores voluptates!</p>
+                </div>
+            </section>
+            <div>
+                <i style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque dolore ipsa voluptatem cum doloribus! A, consectetur. Aperiam corporis eius dolor nam, aliquid a culpa, quia, necessitatibus ipsa explicabo numquam laudantium dolores debitis neque laboriosam quos! Officiis numquam provident ex iure incidunt perspiciatis mollitia rerum quia ad aliquid modi doloremque tempore eius quae quasi, animi nam blanditiis! Quaerat quam eius minima aliquid rem pariatur provident sit odio accusantium adipisci voluptate suscipit minus ullam qui est non, sint facere repellendus harum ipsum? Temporibus, culpa. Iure totam impedit vero voluptates corrupti!</i>
+            </div>
+        </div>  
+        <section id="fittness-calculator">
+            <div>
+                <h1 class="h1" style="font-size: 45px;">Fitness Calculator</h1>
+            </div>
+            <div>
+                <img src="img/Fitness Calculator-img.png " id="fitness-img">
+            </div>
+        </section>
+        <section id="schedule-section">
+            <div>
+                <h1  style="font-size: 55px;">Schedule</h1>
+            </div>
+            <div class="content-schedule">
+                <h2>Monday: Upper-body strength training (45 to 60 minutes)</h2>
+                <p style="font-size: 20px;">
+                    It's no secret that strength training is a critical part of any weekly workout schedule. Sure, dumbbells and barbells may look overwhelming at times, but strength training can help build lean muscle, increase bone strength, and prevent injury. Try this upper-body dumbbell workout or incorporate HIIT into your upper body training with this at-home bodyweight workout. When it comes to following an A+ weekly workout plan, remember to change up your strength routine every three to four weeks to keep seeing results, suggests Holly Rilinger, an AAFA-certified personal trainer and founder of LIFTED. 
+                </p>
+            </div>
+            <hr>
+            <div class="content-schedule">
+                <h2>
+                    Tuesday: Lower-body strength training (30 to 60 minutes)
+                </h2>
+                <p style="font-size: 20px;">
+                    When it comes to lifting, the general rule of thumb is to allow 48 hours of recovery time between working the same muscle group, according to the Hospital for Special Surgery. (When you train, you develop microscopic tears in the muscles that produce inflammation, and your body needs this in-between time to repair the tears.) That said, focus on lower-body strength on "day two" of your weekly workout plan to give upper body muscles a rest.
+                </p>
+            </div>
+            <hr>
+            <div class="content-schedule">
+                <h2>Wednesday: Yoga or a low-impact activity such as barre, light cycling, or swimming (30 to 60 minutes)</h2>
+                <p  style="font-size: 20px;">
+                    While spacing out your weekly workout plan, avoid doing the "same activity on successive days," says Dr. Cardone. "So, if you have a high-impact day, follow that up with a low-impact day." A low-impact workout will ensure you give your muscles time to recover before you hit the heavy weights again. 
+                </p>
+            </div>
+            <hr>
+            <div class="content-schedule">
+                <h2>Thursday: HIIT (20 minutes)</h2>
+                <p  style="font-size: 20px;">
+                    Not only do these fast-paced workouts take less time than others, but they can also provide the same health benefits as endurance activities, according to a 2013 study published in the Journal of Physiology. There's even evidence that those who pick up HIIT-style workouts are more likely to stick to their routine (including a weekly gym workout plan!) because of the variety of movements.
+
+"HIIT could take dozens of forms, but a good start would be to pick something you like, like running, cycling, rowing, or dancing," says Rosante. "Then, do it for intervals of time. Short bursts of full effort work coupled with lower-intensity work of the same move."
+                </p>
+            </div>
+            <hr>
+            <div class="content-schedule">
+                <h2>Friday: Total-body strength training (30 to 60 minutes)</h2>
+                <p style="font-size: 20px;">
+                    End your workweek with total-body strength training. "When it comes to strength training, you should aim to hit all of your major muscle groups like your quads, glutes, hamstrings, chest and upper back, plus core," says Rosante. He encourages a primary focus on heavier compound lifts (which work tons of muscle groups), such as the deadlift, hip thrust, squat, bench press, and weighted rowing movements — plus, anti-movement exercises for your core. "Think: plank and plank variations as well as exercises like the Paloff press," he says.
+                </p>
+            </div>
+            <hr>
+            <div class="content-schedule">
+                <h2>Saturday: Steady-state cardio (running or cycling for as long as feels comfortable for you)</h2>
+                <p  style="font-size: 20px;">
+                    HIIT workouts tend to get all of the attention these days for their many benefits, but steady-state cardio is still important for your health. In fact, a 2017 study found that running just two hours a week can significantly extend your lifespan, providing some pretty convincing evidence that running deserves a place in your weekly workout schedule. Ditto for biking —a 2017 study conducted by researchers at the University of Glasgow and published in the British Medical Journal suggested biking can help you live longer while reducing your risk of cancer and heart disease by nearly half. (FYI, cyclists involved in the study clocked an average of 30 miles per week.) 
+                </p>
+            </div>
+            <hr>
+            <div class="content-schedule">
+                <h2>Sunday: Rest</h2>
+                <p  style="font-size: 20px;">
+                    Sunday is your much-needed rest day, so don't forget to use it to foam roll and stretch. "Think of fitness as a lifelong experience," says Rilinger. "When you're younger, you feel invincible and ignore the warning signs. Giving your body the time it needs to recover means you can stay in the game longer."
+                </p>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h1>Contact Us</h1>
+            </div>
+            <div class="footer-left">
+            <h1 style="font-size: 35px;">Opening Hours</h1>
+            <p style="font-size: 30px;">
+                Monday to saturday -6am to 8am and 6pm to 8pm
+            </p>
+            <p style="font-size: 30px;">
+              sunday -Rest
+            </p>
+            </div>
+            <div class="footer-right">
+                <h1  style="font-size: 35px;">Get In Touch</h1>
+                <p style="font-size: 30px;">
+                    #30 abc colony,xyz City 
+                </p>
+                <p style="font-size: 30px;">
+                   Gym@wesite.com  
+                </p>
+                <p style="font-size: 30px;">
+                    +91 972104420 
+                </p>
+            </div>
+        </div>
+        </section>
+        <section>
+            <div class="center">
+                Copyright &copy; www.abcdefgh.com All rights reserved!&nbsp;&nbsp;
+                <i id="creater">Created by Dheerendra Dixit</i>
+            </div>
+            </div>
+        </section>
+</body>
+</html>
